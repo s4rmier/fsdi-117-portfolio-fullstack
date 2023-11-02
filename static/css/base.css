@@ -34,6 +34,13 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 h1 {
   color: var(--secondary-color-600);
   font-size: 2rem;

@@ -4,5 +4,40 @@
 {% load static %} 
 
 {% block content %}
-<h1>About Me</h1>
+<div id="section-1" class="break"></div>
+<section class="about-section">
+  <div class="img-container center">
+    <img id="about-img" src="{% static './img/logo.png' %}" alt="" />
+  </div>
+
+  <div class="description-container center">
+    <div class="center" style="flex-direction: column">
+      <h1>My role as dev</h1>
+      <h2>Romnick Sarmiento</h2>
+    </div>
+
+    <p></p>
+    <p>
+      "Hi, my name is Romnick. I'm a web designer and full-stack developer.
+      I'm committed to writing clean, reusable, semantically sound code,
+      along with creating a hand-crafted interface that follows good UI & UX
+      design principles.<br /><br />
+    </p>
+
+    <div class="skills-list center">
+      <h2>Skills</h2>
+
+      <div class="skills center">
+        <label>HTML</label>
+        <label>CSS</label>
+        <label>JS</label>
+        <label>SASS</label>
+        <label>GSAP</label>
+        <label>Python</label>
+        <label>Django</label>
+        <label>React</label>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock content %}
