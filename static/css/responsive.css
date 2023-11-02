@@ -1,0 +1,105 @@
+/* Desktop */
+@media (min-width: 1008px) {
+  #nav-check,
+  .nav-btn {
+    display: none;
+  }
+  section.projects-section div#projects-list,
+  section.projects-section div#experience-list,
+  section.experience-section div#projects-list,
+  section.experience-section div#experience-list {
+    gap: 4rem;
+  }
+}
+/* Tablet */
+@media (max-width: 1007px) {
+  html {
+    font-size: 12px;
+  }
+  #nav-check,
+  .nav-btn {
+    display: none;
+  }
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-section .img-container {
+    margin-bottom: 4rem;
+  }
+  .about-section .description-container {
+    width: 100%;
+  }
+  section.projects-section div#projects-list,
+  section.projects-section div#experience-list,
+  section.experience-section div#projects-list,
+  section.experience-section div#experience-list {
+    gap: 4rem 2rem;
+  }
+  section#projects div#projects-list div.project-card {
+    width: 100%;
+  }
+}
+/* Mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 10px;
+  }
+  #nav-check {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 2%;
+  }
+  header .nav-link {
+    flex-direction: column;
+  }
+  header .nav-btn {
+    display: inline-block;
+  }
+  header .nav-btn span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--neutral-color);
+    margin: 6px auto;
+  }
+  /* About Section */
+  section.about-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.about-section .description-container {
+    width: 100%;
+  }
+  section.about-section .description-container .skills {
+    width: 100%;
+  }
+  section.projects-section div#projects-list,
+  section.projects-section div#experience-list,
+  section.experience-section div#projects-list,
+  section.experience-section div#experience-list {
+    gap: 4rem 0rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer nav {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  /* Toggle Function */
+  #nav-check:not(:checked) ~ .nav-link {
+    height: 0px;
+    overflow: hidden;
+  }
+  #nav-check:checked ~ .nav-link {
+    height: auto;
+    overflow: auto;
+  }
+}/*# sourceMappingURL=responsive.css.map */
