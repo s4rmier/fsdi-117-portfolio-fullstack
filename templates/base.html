@@ -20,7 +20,7 @@
   <body>
     <header class="center">
       <div class="logo center">
-        <a href="./index.html"><h2>romnick.dev</h2></a>
+        <a href="{% url 'home' %}"><h2>romnick.dev</h2></a>
       </div>
 
       <nav>
@@ -35,7 +35,7 @@
 
         <div class="nav-link center">
           <a href="{% url 'home' %}">About Me</a>
-          <a href="#section-2">Projects</a>
+          <a href="{% url 'projects' %}">Projects</a>
           <a href="#section-3">Experience</a>
           <a href="{% url 'contact' %}">Contact</a>
         </div>
@@ -45,7 +45,7 @@
     {% block content %} {% endblock content %}
 
     <footer>
-      <a href="">
+      <a href="{% url 'home' %}">
         <h2>romnick.dev</h2>
       </a>
 
@@ -57,8 +57,8 @@
       </nav>
     </footer>
 
-    <script src="{% static './js/email.js' %}"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- <script src="{% static './js/email.js' %}"></script> -->
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
     <script src="{% static './js/main.js' %}"></script>
   </body>
 </html>

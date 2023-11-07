@@ -1,11 +1,11 @@
 let projects;
 
 /* Getting the data */
-fetch("../data/projects.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then(createProjectCards);
+// fetch("../data/projects.json")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then(createProjectCards);
 
 /* Printing the data */
 function createProjectCards(json) {
@@ -37,27 +37,26 @@ function createProjectCards(json) {
 
 let experience;
 
-fetch("../data/experience.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then(createExperienceCards);
+// fetch("../data/experience.json")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then(createExperienceCards);
 
-function createExperienceCards(json) {
-  experience = json;
+// function createExperienceCards(json) {
+//   experience = json;
 
-  const experienceListElement = document.getElementById("experience-list");
+  // const experienceListElement = document.getElementById("experience-list");
 
-  experienceListElement.innerHTML = experience.map(
-    (exp) =>
-      `<div class="experience-card">
-        <p class="experience-name">${exp.entity}</p>
-        <p>${exp.title}</p>
-        <p>${exp.description}</p>
-        <p><strong>${exp.period}</strong></p>
-        <div class="technologies">
-         ${exp.technologies.map((technology) => `<label>${technology}</label>`)}
-        </div>
-    </div>`
-  );
-}
+  // experienceListElement.innerHTML = experience.map(
+  //   (exp) =>
+  //     `<div class="experience-card">
+  //       <p class="experience-name">${exp.entity}</p>
+  //       <p>${exp.title}</p>
+  //       <p>${exp.description}</p>
+  //       <p><strong>${exp.period}</strong></p>
+  //       <div class="technologies">
+  //        ${exp.technologies.map((technology) => `<label>${technology}</label>`)}
+  //       </div>
+  //   </div>`
+  // );

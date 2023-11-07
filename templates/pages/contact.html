@@ -9,7 +9,7 @@
 <h2>Contact Me</h2>
 <p>Feel free to drop me a line below!</p>
 <section class="contact-section">
-<form id="emailform" action="." method="poset">
+<form id="emailform" action="." method="post">
     {% csrf_token %}
     {{ form.name }}
     {{ form.email }}
