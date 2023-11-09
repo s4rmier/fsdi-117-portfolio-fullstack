@@ -1,22 +1,16 @@
-{% extends 'base.html' %}
-
-{% block title %}New Project{% endblock title %}
-{% load static %}
-
-{% block content %}
+{% extends 'base.html' %} {% block title %}New Project{% endblock title %} {%
+load static %} {% block content %}
 <section class="manage-section center">
-    <h2>Create a new project</h2>
-    <form id="project-form" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
+  <h2>Create a new project</h2>
+  <form id="project-form" method="post" enctype="multipart/form-data">
+    {% csrf_token %} 
+    {{ form.name }} 
+    {{ form.description }} 
+    {{ form.year }} 
+    {{ form.repository }} 
+    {{ form.img }}
 
-        {{ form.name }}
-        {{ form.description }}
-        {{ form.year }}
-        {{ form.repository }}
-        {{ form.img }}
-        {{ form.technologies }}
-
-        <button class="primary-button" type="submit">Create Project</button>
-    </form>
+    <button class="primary-button" type="submit">Create Project</button>
+  </form>
 </section>
 {% endblock content %}
