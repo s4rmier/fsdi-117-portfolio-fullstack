@@ -7,6 +7,22 @@
 
 <section id="experience" class="experience-section center">
     <h2>Experience</h2>
+    <div class="experience-list">
+        {% for exp in experience %}
+        <div class="experience-card">
+            <p><b>{{ exp.entity }}</b></p>
+            <p>{{ exp.title }}</p>
+            <p>{{ exp.description }}</p>
+            <p>{{ exp.period }}</p>
+
+            <div class="technologies">
+                {% for tech in exp.technologies.all %}
+                <label>{{tech.name}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </section>
 
 {% endblock content %}

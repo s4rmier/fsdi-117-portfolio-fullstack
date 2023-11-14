@@ -193,4 +193,43 @@ section.manage-section form#project-form {
   width: 35rem;
   padding: 3%;
   border: 1px solid var(--secondary-color);
+}
+
+section#experience div.experience-list {
+  display: flex;
+  flex-direction: row;
+}
+section#experience div.experience-list div.experience-card {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  flex-wrap: wrap;
+}
+section#experience div.experience-list div.experience-card p {
+  margin: 0.5rem 0rem;
+}
+section#experience div.experience-list div.experience-card div.technologies {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+section.experience-new {
+  display: flex;
+  flex-direction: column;
+}
+section.experience-new form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0rem;
+}
+section.experience-new form input, section.experience-new form textarea, section.experience-new form select {
+  margin: 0.35rem 0rem;
+  padding: 0.15rem 0.25rem;
+}
+section.experience-new form button {
+  margin: 1rem 0rem;
 }/*# sourceMappingURL=section.css.map */
