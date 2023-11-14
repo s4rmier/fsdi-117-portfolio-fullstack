@@ -1,11 +1,31 @@
 {% extends 'base.html' %}
 
 {% block title %}Projects{% endblock title %}
-
 {% load static %}
 
 {% block content %}
 
-<h2>Projects</h2>
+<section id="projects" class="projects-section center">
+    <h2>Projects</h2>
 
+    <div class="projects-list">
+        {% for project in projects %}
+        <div class="project-card">
+            <a href="{{project.repository}}" target="_blank">
+                <img src="{{project.img}}" alt="">
+                <p><b>{{project.name}}</b></p>
+                <p>{{project.description}}</p>
+                <p class="project-year">{{project.year}}</p>
+
+                <div class="technologies">
+                    {% for tech in project.technologies.all %}
+                    <label>{{tech.name}}</label>
+                    {% endfor %}
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    
+</section>
 {% endblock content %}

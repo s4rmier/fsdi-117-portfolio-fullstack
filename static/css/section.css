@@ -43,44 +43,48 @@
 }
 
 section#projects {
+  display: flex;
   flex-direction: column;
   padding: 2rem;
   background-color: var(--secondary-color-900);
 }
-section#projects div#projects-list {
+section#projects div.projects-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  gap: 2rem;
   margin-top: 2rem;
 }
-section#projects div#projects-list div.project-card {
+section#projects div.projects-list div.project-card {
+  margin: 2rem 4rem;
   border-radius: 1%;
   display: flex;
   flex-wrap: wrap;
   padding: 0.5rem;
-  width: 25rem;
+  width: 30rem;
   border: 1px solid var(--secondary-color-900);
 }
-section#projects div#projects-list div.project-card a img {
+section#projects div.projects-list div.project-card a img {
   width: 100%;
   border-radius: 1%;
 }
-section#projects div#projects-list div.project-card a p.project-name {
+section#projects div.projects-list div.project-card a p {
   margin: 0.5rem 0rem;
   font-size: 1.5rem;
 }
-section#projects div#projects-list div.project-card a p.project-name ~ p {
+section#projects div.projects-list div.project-card a p.project-year {
   font-style: italic;
 }
-section#projects div#projects-list div.project-card a .technologies {
+section#projects div.projects-list div.project-card a .technologies {
+  display: flex;
   justify-content: flex-start;
   gap: 0.5rem;
   flex-wrap: wrap;
   margin-top: 0.5rem;
 }
-section#projects div#projects-list div.project-card:hover {
+section#projects div.projects-list div.project-card:hover {
   opacity: 0.5;
   border: 1px solid var(--secondary-color);
 }
@@ -171,4 +175,22 @@ section.contact-section form#emailform button.primary-button {
 }
 section.contact-section form#emailform .primary-button:hover {
   background: linear-gradient(135deg, #7f66ff 0%, #aa99ff 100%);
+}
+
+section.manage-section {
+  display: flex;
+  flex-direction: column;
+}
+section.manage-section h2 {
+  margin-top: 4rem;
+}
+section.manage-section form#project-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  height: 35rem;
+  justify-content: space-evenly;
+  width: 35rem;
+  padding: 3%;
+  border: 1px solid var(--secondary-color);
 }/*# sourceMappingURL=section.css.map */
