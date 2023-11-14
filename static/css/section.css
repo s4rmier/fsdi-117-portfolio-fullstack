@@ -58,7 +58,6 @@ section#projects div.projects-list {
   margin-top: 2rem;
 }
 section#projects div.projects-list div.project-card {
-  margin: 2rem 4rem;
   border-radius: 1%;
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +71,7 @@ section#projects div.projects-list div.project-card a img {
 }
 section#projects div.projects-list div.project-card a p {
   margin: 0.5rem 0rem;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 section#projects div.projects-list div.project-card a p.project-year {
   font-style: italic;
